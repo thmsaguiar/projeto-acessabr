@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import './style.scss';
 import logoAcessaBr from '../../images/logo-acessaBR.svg';
 import logoEbac from '../../images/logo-ebac.svg';
@@ -14,7 +14,7 @@ const Header = () => {
             </div>
             <div className="header__logo header__logo--ebac">
                 <span className="header__span">
-                    Apoio:
+                    apoio:
                 </span>
                 <img src={logoEbac} alt="Logo EBAC" />
             </div>

@@ -1,3 +1,5 @@
+@import "../../styles/responsive";
+
 @mixin displayFlexRow($width: 100%) {
     display: flex;
     flex-direction: row;
@@ -6,7 +8,7 @@
     justify-content: space-between;
 }
 
-.places {    
+.places {
     width: 100%;
 
     &__header {
@@ -32,7 +34,7 @@
         h5 {
             font-size: 1.8rem;
             font-weight: 500;
-            color: #706D6D;
+            color: #706d6d;
         }
 
         select {
@@ -41,7 +43,17 @@
             font-size: 1.8rem;
             color: #000;
             line-height: 2.1rem;
-            padding: 0 .5rem;
+            padding: 0 0.5rem;
+        }
+    }
+
+    @media (max-width: $mobileLarge) {
+        &__header {
+            flex-wrap: wrap;
+        }
+
+        &__select {
+            margin-top: 1rem;
         }
     }
 }

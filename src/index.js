@@ -6,19 +6,16 @@ import Curador from './components/Curator';
 import Footer from './components/Footer';
 import Places from './components/Places';
 import Routes from './routes';
-
-const CONFIG = {
-  uf: 'SP',
-  city: 'São Bernardo do Campo'
-}
+import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
   <div className="main__wrapper">
     <div className="main__container">
-      <Header city={CONFIG.city} uf={CONFIG.uf}/>
-      <Routes city={CONFIG.city} uf={CONFIG.uf}/>
-      <Places />      
-      <Curador />
+      <BrowserRouter>
+        <Routes />
+        <Places />
+        <Curador />
+      </BrowserRouter>
     </div>
     <Footer />
   </div>
